@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
+#generate the content of records.txt#02# 4 test
 from random import random
 
 def main():
