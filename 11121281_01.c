@@ -18,17 +18,21 @@ int main(void)
 	int i, n;
 	int *a;
 	double x;
-	printf("import n:");
-	scanf("%d", &n);
-	printf("import x:");
-	scanf("%lf", &x);
-	a = malloc(sizeof(i) * n);
-	GetData(a, n);
-	Display(a, n);
-	printf("average:%lf\n", GetAverage(a, n));
-	printf("index1:%d\n", GetIndex1(a, n, x));
-	printf("index2:%d\n", GetIndex2(a, n, x));
-	free(a);
+
+	while(1){
+		printf("import n(0 for exit):");
+		scanf("%d", &n);
+		if(n == 0)break;
+		printf("import x:");
+		scanf("%lf", &x);
+		a = malloc(sizeof(i) * n);
+		GetData(a, n);
+		Display(a, n);
+		printf("\naverage:%lf\n", GetAverage(a, n));
+		printf("index1:%d\n", GetIndex1(a, n, x));
+		printf("index2:%d\n", GetIndex2(a, n, x));
+		free(a);
+	}
 	return 0;
 }
 
@@ -45,7 +49,7 @@ void GetData(int *a, int n){
 void Display(int *a, int n){
 	int i;
 	for (i = 0; i < n; i++, a++) 
-		printf("%d\n", *a);
+		printf("%2d ", *a);
 }
 
 
@@ -62,7 +66,7 @@ int GetIndex1(int *a, int n, double x){
 	int *start;
 	start = a;
 	for (i = 0; i < n; i++,a++) 
-		if(abs(x - *(start+min)) > abs(x - *a))min=i;
+		if(fabs(x - *(start+min)) > fabs(x - *a))min=i;
 	return min;
 }
 
@@ -73,7 +77,7 @@ int GetIndex2(int *a, int n, double x){
 	start = a;
 	a += n - 1;
 	for (i = n-1; i >= 0; i--,a--) 
-		if(abs(x - *(start+min)) > abs(x - *a))min=i;
+		if(fabs(x - *(start+min)) > fabs(x - *a))min=i;
 	return min;
 }
 
