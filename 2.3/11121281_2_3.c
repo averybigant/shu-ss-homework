@@ -52,6 +52,7 @@ int main(void)
 			printf("maximum = %d, minimum = %d, MaxIndex = %d, MinIndex = %d\n",
 				max, min, maxi, mini);
 	}
+	fclose(fp);
 
 	return 0;
 }

@@ -15,6 +15,7 @@ GetIndex1	1.1.1/11121281_01.c	/^int GetIndex1(int *a, int n, double x){$/;"	f
 GetIndex2	1.1.1/11121281_01.c	/^int GetIndex2(int *a, int n, double x){$/;"	f
 InitList	1.1.2/11121281_02.c	/^void InitList(SeqList *lp)$/;"	f
 InitList	1.1.3/SeqList.c	/^void InitList(SeqList *lp)$/;"	f
+LINEMAX	2.4/11121281_2_4.c	4;"	d	file:
 MAX	1.1.2/Seqlist.h	12;"	d
 MAX	1.1.3/SeqList.h	13;"	d
 N	2.3/11121281_2_3.c	3;"	d	file:
@@ -55,6 +56,8 @@ main	1.1.3/11121281_03.c	/^int main(void)$/;"	f
 main	2.1/11121281_2_1.c	/^int main(void)$/;"	f
 main	2.2/11121281_2_2.c	/^int main(void)$/;"	f
 main	2.3/11121281_2_3.c	/^int main(void)$/;"	f
+main	2.4/11121281_2_4.c	/^int main(void)$/;"	f
 name	1.1.2/Seqlist.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon1
 name	1.1.3/SeqList.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon3
+palindrome	2.4/11121281_2_4.c	/^char *palindrome(char *str){$/;"	f
 sex	1.1.3/SeqList.h	/^	int sex;$/;"	m	struct:__anon3
