@@ -4,51 +4,42 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-CreateList	1.1.2/11121281_02.c	/^void CreateList(SeqList *lp, char *strname)$/;"	f
 CreateList	1.1.3/SeqList.c	/^void CreateList(SeqList *lp, char *strname)$/;"	f
 Display	1.1.1/11121281_01.c	/^void Display(int *a, int n){$/;"	f
-Error	1.1.2/11121281_02.c	/^void Error(char *s)$/;"	f
+Display	1.1.2/11121281_02.c	/^void Display(STUDENTS *s, int n){$/;"	f
 Error	1.1.3/SeqList.c	/^void Error(char *s)$/;"	f
 GetAverage	1.1.1/11121281_01.c	/^double GetAverage(int *a, int n){$/;"	f
 GetData	1.1.1/11121281_01.c	/^void GetData(int *a, int n){$/;"	f
 GetIndex1	1.1.1/11121281_01.c	/^int GetIndex1(int *a, int n, double x){$/;"	f
 GetIndex2	1.1.1/11121281_01.c	/^int GetIndex2(int *a, int n, double x){$/;"	f
-InitList	1.1.2/11121281_02.c	/^void InitList(SeqList *lp)$/;"	f
 InitList	1.1.3/SeqList.c	/^void InitList(SeqList *lp)$/;"	f
 LINEMAX	2.4/11121281_2_4.c	4;"	d	file:
-MAX	1.1.2/Seqlist.h	12;"	d
 MAX	1.1.3/SeqList.h	13;"	d
+N	1.1.2/11121281_02.c	4;"	d	file:
 N	2.3/11121281_2_3.c	3;"	d	file:
-PrintList	1.1.2/11121281_02.c	/^void PrintList(SeqList *lp)$/;"	f
 PrintList	1.1.3/SeqList.c	/^void PrintList(SeqList *lp)$/;"	f
 SCALE	2.2/11121281_2_2.c	3;"	d	file:
-SEQLIST_H	1.1.2/Seqlist.h	3;"	d
 SEQLIST_H	1.1.3/SeqList.h	3;"	d
-Save	1.1.2/11121281_02.c	/^void Save(SeqList *lp, char *strname)$/;"	f
+STUDENTS	1.1.2/11121281_02.c	/^}STUDENTS;$/;"	t	typeref:struct:__anon1	file:
 Save	1.1.3/SeqList.c	/^void Save(SeqList *lp, char *strname)$/;"	f
-SeqList	1.1.2/Seqlist.h	/^}SeqList;$/;"	t	typeref:struct:__anon2
-SeqList	1.1.3/SeqList.h	/^}SeqList;$/;"	t	typeref:struct:__anon4
-Sort_height	1.1.2/11121281_02.c	/^void Sort_height(SeqList  *lp)$/;"	f
+SeqList	1.1.3/SeqList.h	/^}SeqList;$/;"	t	typeref:struct:__anon3
+Sort	1.1.2/11121281_02.c	/^void Sort(STUDENTS *s, int n){$/;"	f
 Sort_id	1.1.3/SeqList.c	/^void Sort_id(SeqList  *lp)$/;"	f
-data	1.1.2/Seqlist.h	/^	datatype data[MAX];	\/* 存放顺序表元素的数组 *\/$/;"	m	struct:__anon2
-data	1.1.3/SeqList.h	/^	datatype data[MAX];	\/* 存放顺序表元素的数组 *\/$/;"	m	struct:__anon4
-datatype	1.1.2/Seqlist.h	/^} datatype;$/;"	t	typeref:struct:__anon1
-datatype	1.1.3/SeqList.h	/^} datatype;$/;"	t	typeref:struct:__anon3
+data	1.1.3/SeqList.h	/^	datatype data[MAX];	\/* 存放顺序表元素的数组 *\/$/;"	m	struct:__anon3
+datatype	1.1.3/SeqList.h	/^} datatype;$/;"	t	typeref:struct:__anon2
 exp1	2.2/11121281_2_2.c	/^double exp1(double x){$/;"	f
 exp2	2.2/11121281_2_2.c	/^double exp2(double x){$/;"	f
 factorial	2.2/11121281_2_2.c	/^double factorial(unsigned long long int n){$/;"	f
-fgetline	1.1.2/11121281_02.c	/^char *fgetline(FILE *fp, char *str, int n, char delim)$/;"	f
 fgetline	1.1.3/SeqList.c	/^char *fgetline(FILE *fp, char *str, int n, char delim)$/;"	f
+fgetlines	1.1.2/11121281_02.c	/^char *fgetlines(FILE *fp, char *str, int n, char delim){$/;"	f
 findmaxmin	2.3/11121281_2_3.c	/^int findmaxmin(int nums[], int n, int *max, int *maxi, int *min, int *mini){$/;"	f
 getGCD	2.1/11121281_2_1.c	/^int getGCD(int a, int b){$/;"	f
 getLCM	2.1/11121281_2_1.c	/^int getLCM(int a, int b, int gcd){$/;"	f
+getRecs	1.1.2/11121281_02.c	/^int getRecs(char *filename, STUDENTS *s, int n){$/;"	f
 getdata	2.3/11121281_2_3.c	/^int getdata(FILE *fp, int nums[]){$/;"	f
-height	1.1.2/Seqlist.h	/^	double height;	\/* 身高 *\/$/;"	m	struct:__anon1
-height	1.1.3/SeqList.h	/^	double height;	\/* 身高 *\/$/;"	m	struct:__anon3
-id	1.1.2/Seqlist.h	/^	int id;			\/* 学号 *\/$/;"	m	struct:__anon1
-id	1.1.3/SeqList.h	/^	int id;			\/* 学号 *\/$/;"	m	struct:__anon3
-last	1.1.2/Seqlist.h	/^	int last;			\/* 表示data中实际存放元素个数 *\/$/;"	m	struct:__anon2
-last	1.1.3/SeqList.h	/^	int last;			\/* 表示data中实际存放元素个数 *\/$/;"	m	struct:__anon4
+height	1.1.3/SeqList.h	/^	double height;	\/* 身高 *\/$/;"	m	struct:__anon2
+id	1.1.3/SeqList.h	/^	int id;			\/* 学号 *\/$/;"	m	struct:__anon2
+last	1.1.3/SeqList.h	/^	int last;			\/* 表示data中实际存放元素个数 *\/$/;"	m	struct:__anon3
 main	1.1.1/11121281_01.c	/^int main(void)$/;"	f
 main	1.1.2/11121281_02.c	/^int main(void)$/;"	f
 main	1.1.2/generate_records.py	/^def main():$/;"	f
@@ -57,7 +48,9 @@ main	2.1/11121281_2_1.c	/^int main(void)$/;"	f
 main	2.2/11121281_2_2.c	/^int main(void)$/;"	f
 main	2.3/11121281_2_3.c	/^int main(void)$/;"	f
 main	2.4/11121281_2_4.c	/^int main(void)$/;"	f
-name	1.1.2/Seqlist.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon1
-name	1.1.3/SeqList.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon3
+name	1.1.3/SeqList.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon2
 palindrome	2.4/11121281_2_4.c	/^char *palindrome(char *str){$/;"	f
-sex	1.1.3/SeqList.h	/^	int sex;$/;"	m	struct:__anon3
+sex	1.1.3/SeqList.h	/^	int sex;$/;"	m	struct:__anon2
+sid	1.1.2/11121281_02.c	/^	char sid[10];$/;"	m	struct:__anon1	file:
+sname	1.1.2/11121281_02.c	/^	char sname[20];$/;"	m	struct:__anon1	file:
+stall	1.1.2/11121281_02.c	/^	double stall;$/;"	m	struct:__anon1	file:
