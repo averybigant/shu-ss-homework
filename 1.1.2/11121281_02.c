@@ -25,7 +25,7 @@ char *fgetlines(FILE *fp, char *str, int n, char delim){
 		return NULL;
 	}
 
-	for(i=0; i<n && (str[i] = fgetc(fp)) != delim && cur<len; i++,cur++);
+	for(i=0; i<n-1 && (str[i] = fgetc(fp)) != delim && cur<len; i++,cur++);
 	str[i] = '\0';
 	return str;
 }
@@ -35,7 +35,7 @@ int getRecs(char *filename, STUDENTS *s, int n){
 	char str[20];
 	FILE *fp;
 	if((fp=fopen(filename, "r"))==NULL)return 0;
-	for (i = 0; i < n-1 && fgetlines(fp, str, 20, '\t'); i++) {
+	for (i = 0; i < n && fgetlines(fp, str, 20, '\t'); i++) {
 		strcpy(s->sid, str);
 		fgetlines(fp, str, 20, '\t');
 		strcpy(s->sname, str);
