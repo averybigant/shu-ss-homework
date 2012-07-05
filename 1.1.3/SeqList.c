@@ -114,3 +114,55 @@ void Save(SeqList *lp, char *strname)
 	fclose(fp);
 }
 
+
+
+void Insert(SeqList *lp, datatype x){
+	/*SeqList must be sorted at first*/
+	int i, j;
+	for (i = 0; i < lp->last - 1; i++) {
+		if(i+1 > lp->last || (lp->data[i].id <= x.id && x.id < lp->data[i+1].id)){
+			for (j = lp->last; j >= i+1; j--) {
+				lp->data[j + 1] = lp->data[j];
+			}
+
+			break;
+		}
+	}
+	lp->data[i + 1] = x;
+	lp->last++;
+}
+
+
+void Reverse(SeqList *lp){
+	int i, swp;
+	datatype temp;
+	swp = lp->last-1;
+	/*for (i = 0 ; i < swp; i++, swp=lp->last-i) {*/
+	for (i = 0 ; i < swp; i++, swp--) {
+		temp = lp->data[i];
+		lp->data[i] = lp->data[swp];
+		lp->data[swp] = temp;
+	}
+}
+
+int Count(SeqList *lp, double y){
+	int i;
+	int sum=0;
+	for (i = 0; i < lp->last; i++) 
+		if(lp->data[i].height == y)sum++;
+	return sum;
+}
+void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm){
+	int i;
+	for (i = 0; i < lp->last-1; i++) {
+		if(lp->data[i].sex==0)Adddata(lpm, lp->data[i]);
+		else
+			Adddata(lpfm, lp->data[i]);
+	}
+}
+
+
+void Adddata(SeqList *lp, datatype x){
+	lp->data[lp->last] = x;
+	lp->last++;
+}

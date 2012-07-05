@@ -25,4 +25,10 @@ void Error(char *s);							/* 自定义错误处理函数 */
 void PrintList(SeqList *lp);					/* 输出学生表 */
 void Save(SeqList *lp, char *strname);			/* 保存学生顺序表到指定文件 */
 
+void Insert(SeqList *lp, datatype x);
+void Reverse(SeqList *lp);
+ int Count(SeqList *lp, double y);
+void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm);
+void Adddata(SeqList *lp, datatype x);
+
 #endif
