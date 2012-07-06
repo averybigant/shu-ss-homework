@@ -30,5 +30,6 @@ void Reverse(SeqList *lp);
  int Count(SeqList *lp, double y);
 void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm);
 void Adddata(SeqList *lp, datatype x);
+int Pause(char * prompt);
 
 #endif

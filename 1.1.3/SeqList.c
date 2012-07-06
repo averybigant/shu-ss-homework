@@ -166,3 +166,8 @@ void Adddata(SeqList *lp, datatype x){
 	lp->data[lp->last] = x;
 	lp->last++;
 }
+
+int Pause(char * prompt){
+	printf("%s", prompt);
+	return getchar();
+}

@@ -22,17 +22,20 @@ int main(void)
 	Save(&lp, "03_save.txt");
 
 	printf("3: 插入后保持有序\n");
-	printf("Input id:");
-	scanf("%d", &x.id);
-	printf("Input name:");
-	gets(x.name);
-	scanf("%s", x.name);
-	printf("Input height:");
-	scanf("%lf", &x.height);
-	printf("Input sex:");
-	scanf("%d", &x.sex);
-	Insert(&lp, x);
-	PrintList(&lp);
+	while (Pause("输入0终止\n") != '0') {
+		printf("Input id:");
+		scanf("%d", &x.id);
+		printf("Input name:");
+		gets(x.name);
+		scanf("%s", x.name);
+		printf("Input height:");
+		scanf("%lf", &x.height);
+		printf("Input sex:");
+		scanf("%d", &x.sex);
+		Insert(&lp, x);
+		PrintList(&lp);
+		Pause("");
+	}
 
 	printf("4: reverse\n");
 	Reverse(&lp);
