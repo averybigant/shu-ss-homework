@@ -47,7 +47,7 @@ void CreateList(SeqList *lp, char *strname)
 		
 		fgetline(fp, str, 20, '\t');
 		strncpy(lp->data[lp->last].name, str, 9);
-		lp->data[lp->last].name[8] = '\0';
+		lp->data[lp->last].name[9] = '\0';
 		
 		fgetline(fp, str, 20, '\t');
 		lp->data[lp->last].height = atof(str);
@@ -93,7 +93,7 @@ void PrintList(SeqList *lp)
 {
 	int i;
 	for(i=0; i<lp->last; i++)
-		printf("%08d\t%-10s\t%.2f\t%d\n",
+		printf("%08d\t%-11s\t%.2f\t%d\n",
 			lp->data[i].id, lp->data[i].name, lp->data[i].height, lp->data[i].sex);
 }
 
@@ -154,7 +154,7 @@ int Count(SeqList *lp, double y){
 }
 void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm){
 	int i;
-	for (i = 0; i < lp->last-1; i++) {
+	for (i = 0; i < lp->last; i++) {
 		if(lp->data[i].sex==0)Adddata(lpm, lp->data[i]);
 		else
 			Adddata(lpfm, lp->data[i]);

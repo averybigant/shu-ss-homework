@@ -25,6 +25,7 @@ int main(void)
 	printf("Input id:");
 	scanf("%d", &x.id);
 	printf("Input name:");
+	gets(x.name);
 	scanf("%s", x.name);
 	printf("Input height:");
 	scanf("%lf", &x.height);
