@@ -53,14 +53,11 @@ Node *sort_score(Node *head){
 	newnode->next=NULL;
 	for (temp = *head; temp.next!=NULL; temp=*(temp.next)) {
 			i++;
-			/*for (; newnode->next!=NULL; newnode=newnode->next) {*/
 			for(tp = newhead;tp->next!=NULL && tp->next->score >= temp.next->score;tp = tp->next);
 					p = (Node*)malloc(sizeof(Node));
 					*p = *(temp.next);
 					p->next = (*tp).next;
 					(*tp).next = p;
-				/*newnode=newnode->next;*/
-			/*}*/
 	}
 	FreeList(head);
 	return newhead;

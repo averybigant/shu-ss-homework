@@ -7,3 +7,5 @@ main.o maindb.o: linklist.h 11121281_5.c
 linklist.o linklistdb.o: linklist.h linklist.c
 	gcc -Wall -c -o linklist.o linklist.c -lm
 	gcc -g -Wall -c -o linklistdb.o linklist.c -lm
+clean:
+	rm *.o
