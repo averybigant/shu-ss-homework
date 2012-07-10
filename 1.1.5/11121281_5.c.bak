@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "linklist.h"
+
+int main(void)
+{
+	Node linklist;
+	printf("hello~\n");
+	InitList(&linklist);
+	addnode(&linklist);
+	ShowList(&linklist);
+	linklist = *sort_score(&linklist);
+	printf("aftersort\n");
+	ShowList(&linklist);
+	FreeList(&linklist);
+	return 0;
+}

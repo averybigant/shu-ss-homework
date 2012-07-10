@@ -13,25 +13,31 @@ Display	1.1.1/11121281_01.c	/^void Display(int *a, int n){$/;"	f
 Display	1.1.2/11121281_02.c	/^void Display(STUDENTS *s, int n){$/;"	f
 Error	1.1.3/SeqList.c	/^void Error(char *s)$/;"	f
 FreeList	1.1.4/LinkList.c	/^void FreeList(struct Node *head)$/;"	f
+FreeList	1.1.5/linklist.c	/^void FreeList(Node *head){$/;"	f
 GetAverage	1.1.1/11121281_01.c	/^double GetAverage(int *a, int n){$/;"	f
 GetData	1.1.1/11121281_01.c	/^void GetData(int *a, int n){$/;"	f
 GetIndex1	1.1.1/11121281_01.c	/^int GetIndex1(int *a, int n, double x){$/;"	f
 GetIndex2	1.1.1/11121281_01.c	/^int GetIndex2(int *a, int n, double x){$/;"	f
 InitList	1.1.3/SeqList.c	/^void InitList(SeqList *lp)$/;"	f
 InitList	1.1.4/LinkList.c	/^void InitList(struct Node *head)$/;"	f
+InitList	1.1.5/linklist.c	/^void InitList(Node *head){$/;"	f
 Insert	1.1.3/SeqList.c	/^void Insert(SeqList *lp, datatype x){$/;"	f
 Insert	1.1.4/LinkList.c	/^void Insert(struct Node *head, struct Node node)$/;"	f
 Insert0	1.1.4/LinkList.c	/^void Insert0(struct Node *head, struct Node node)$/;"	f
 Insert1	1.1.4/LinkList.c	/^void Insert1(struct Node *head, struct Node node)$/;"	f
+Insert1	1.1.5/linklist.c	/^void Insert1(Node *head, Node node){$/;"	f
 LINEMAX	2.4/11121281_2_4.c	4;"	d	file:
 LINKLIST_H	1.1.4/LinkList.h	3;"	d
+LINKLIST_H	1.1.5/linklist.h	2;"	d
 Load	1.1.4/LinkList.c	/^void Load(struct Node *head, char *filename)$/;"	f
 MAX	1.1.3/SeqList.h	13;"	d
+MAX_SIZE	1.1.5/linklist.h	4;"	d
 Merge	1.1.4/11121281_4.c	/^void Merge(struct Node *hm, struct Node *hfm, struct Node *head)	\/* 待完成 *\/$/;"	f
 Modify	1.1.4/LinkList.c	/^void Modify(struct Node *p, double height)$/;"	f
 N	1.1.2/11121281_02.c	4;"	d	file:
 N	2.3/11121281_2_3.c	3;"	d	file:
 Node	1.1.4/LinkList.h	/^struct Node$/;"	s
+Node	1.1.5/linklist.h	/^}Node;$/;"	t	typeref:struct:student
 Pause	1.1.3/SeqList.c	/^int Pause(char * prompt){$/;"	f
 Pause	1.1.4/11121281_4.c	/^int Pause(char *prompt)$/;"	f
 PrintList	1.1.3/SeqList.c	/^void PrintList(SeqList *lp)$/;"	f
@@ -45,12 +51,16 @@ Save	1.1.4/LinkList.c	/^void Save(struct Node head, char *filename)$/;"	f
 Search	1.1.4/LinkList.c	/^struct Node *Search(struct Node head, int id)$/;"	f
 SeqList	1.1.3/SeqList.h	/^}SeqList;$/;"	t	typeref:struct:__anon3
 Show	1.1.4/LinkList.c	/^void Show(struct Node *p)$/;"	f
+Show	1.1.5/linklist.c	/^void Show(Node *p){$/;"	f
 ShowList	1.1.4/LinkList.c	/^void ShowList(struct Node head)$/;"	f
+ShowList	1.1.5/linklist.c	/^void ShowList(Node *head){$/;"	f
 Sort	1.1.2/11121281_02.c	/^void Sort(STUDENTS *s, int n){$/;"	f
 Sort_id	1.1.3/SeqList.c	/^void Sort_id(SeqList  *lp)$/;"	f
 Sort_id	1.1.4/LinkList.c	/^void Sort_id(struct Node *head)$/;"	f
 Split	1.1.3/SeqList.c	/^void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm){$/;"	f
 Split	1.1.4/11121281_4.c	/^void Split(struct Node *head, struct Node *hm, struct Node *hfm)	\/* 待完成 *\/$/;"	f
+addnode	1.1.5/linklist.c	/^void addnode(Node *head){$/;"	f
+countbigger	1.1.5/linklist.c	/^int countbigger(Node *head, int score){$/;"	f
 data	1.1.3/SeqList.h	/^	datatype data[MAX];	\/* 存放顺序表元素的数组 *\/$/;"	m	struct:__anon3
 data	1.1.4/LinkList.h	/^	datatype data;			\/* 数据域 *\/$/;"	m	struct:Node
 datatype	1.1.3/SeqList.h	/^} datatype;$/;"	t	typeref:struct:__anon2
@@ -76,16 +86,24 @@ main	1.1.2/11121281_02.c	/^int main(void)$/;"	f
 main	1.1.2/generate_records.py	/^def main():$/;"	f
 main	1.1.3/11121281_03.c	/^int main(void)$/;"	f
 main	1.1.4/11121281_4.c	/^int main()$/;"	f
+main	1.1.5/11121281_5.c	/^int main(void)$/;"	f
 main	2.1/11121281_2_1.c	/^int main(void)$/;"	f
 main	2.2/11121281_2_2.c	/^int main(void)$/;"	f
 main	2.3/11121281_2_3.c	/^int main(void)$/;"	f
 main	2.4/11121281_2_4.c	/^int main(void)$/;"	f
 name	1.1.3/SeqList.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon2
 name	1.1.4/LinkList.h	/^	char name[9];			\/* 姓名 *\/$/;"	m	struct:__anon4
+name	1.1.5/linklist.h	/^	char name[MAX_SIZE];$/;"	m	struct:student
 next	1.1.4/LinkList.h	/^	struct Node *next;		\/* 指针域 *\/$/;"	m	struct:Node	typeref:struct:Node::Node
+next	1.1.5/linklist.h	/^	struct student *next;$/;"	m	struct:student	typeref:struct:student::student
 palindrome	2.4/11121281_2_4.c	/^char *palindrome(char *str){$/;"	f
+score	1.1.5/linklist.h	/^	int stnum, score;$/;"	m	struct:student
 sex	1.1.3/SeqList.h	/^	int sex;$/;"	m	struct:__anon2
 sex	1.1.4/LinkList.h	/^	int sex;				\/* 性别，0为男生，1为女生 *\/$/;"	m	struct:__anon4
 sid	1.1.2/11121281_02.c	/^	char sid[10];$/;"	m	struct:__anon1	file:
 sname	1.1.2/11121281_02.c	/^	char sname[20];$/;"	m	struct:__anon1	file:
+sort_score	1.1.5/linklist.c	/^Node *sort_score(Node *head){$/;"	f
+split	1.1.5/linklist.c	/^void split(Node *head, Node *lp, Node *lf){$/;"	f
 stall	1.1.2/11121281_02.c	/^	double stall;$/;"	m	struct:__anon1	file:
+stnum	1.1.5/linklist.h	/^	int stnum, score;$/;"	m	struct:student
+student	1.1.5/linklist.h	/^typedef struct student$/;"	s
