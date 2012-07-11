@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 Adddata	1.1.3/SeqList.c	/^void Adddata(SeqList *lp, datatype x){$/;"	f
+CH	2.14/11121281_2_14.c	3;"	d	file:
 Count	1.1.3/SeqList.c	/^int Count(SeqList *lp, double y){$/;"	f
 Count	1.1.4/11121281_4.c	/^int Count(struct Node head, double height_fm, double height_m)		\/* 待完成 *\/$/;"	f
 CreateList	1.1.3/SeqList.c	/^void CreateList(SeqList *lp, char *strname)$/;"	f
@@ -12,6 +13,8 @@ Delete	1.1.4/LinkList.c	/^int Delete(struct Node *head, int id)$/;"	f
 Display	1.1.1/11121281_01.c	/^void Display(int *a, int n){$/;"	f
 Display	1.1.2/11121281_02.c	/^void Display(STUDENTS *s, int n){$/;"	f
 Error	1.1.3/SeqList.c	/^void Error(char *s)$/;"	f
+FAC3	2.12/11121281_2_12.c	3;"	d	file:
+FMTS	2.11/11121281_2_11.c	4;"	d	file:
 FreeList	1.1.4/LinkList.c	/^void FreeList(struct Node *head)$/;"	f
 FreeList	1.1.5/linklist.c	/^void FreeList(Node *head){$/;"	f
 GetAverage	1.1.1/11121281_01.c	/^double GetAverage(int *a, int n){$/;"	f
@@ -36,9 +39,11 @@ LINKLIST_H	1.1.5/linklist.h	2;"	d
 Load	1.1.4/LinkList.c	/^void Load(struct Node *head, char *filename)$/;"	f
 MAX	1.1.3/SeqList.h	13;"	d
 MAXLEN	2.10/11121281_2_10.c	3;"	d	file:
+MAXLEN	2.11/11121281_2_11.c	3;"	d	file:
 MAXLEN	2.6/11121281_2_6.c	3;"	d	file:
 MAXLEN	2.7/11121281_2_7.c	4;"	d	file:
 MAXLEN	2.8/11121281_2_8.c	3;"	d	file:
+MAXSTR	2.14/11121281_2_14.c	4;"	d	file:
 MAX_SIZE	1.1.5/linklist.h	4;"	d
 Merge	1.1.4/11121281_4.c	/^void Merge(struct Node *hm, struct Node *hfm, struct Node *head)	\/* 待完成 *\/$/;"	f
 Modify	1.1.4/LinkList.c	/^void Modify(struct Node *p, double height)$/;"	f
@@ -69,10 +74,13 @@ Split	1.1.3/SeqList.c	/^void Split(SeqList *lp, SeqList *lpm, SeqList *lpfm){$/;
 Split	1.1.4/11121281_4.c	/^void Split(struct Node *head, struct Node *hm, struct Node *hfm)	\/* 待完成 *\/$/;"	f
 addnode	1.1.5/linklist.c	/^void addnode(Node *head){$/;"	f
 addnode	1.1.6/11121281_06.c	/^void addnode(student *head, int n){$/;"	f
+calcstr	2.14/11121281_2_14.c	/^void calcstr(char *str){$/;"	f
+calctriangles	2.12/11121281_2_12.c	/^unsigned long long int calctriangles(unsigned long long int points){$/;"	f
 code	1.1.6/11121281_06.c	/^	int code;$/;"	m	struct:student	file:
 count	2.5/11121281_2_5.c	/^int count(node *head){$/;"	f
 countbigger	1.1.5/linklist.c	/^int countbigger(Node *head, int score){$/;"	f
 create	2.5/11121281_2_5.c	/^void create(node *head, int data){$/;"	f
+createarr	2.11/11121281_2_11.c	/^void createarr(int arr[][MAXLEN], int n){$/;"	f
 createarray	2.8/11121281_2_8.c	/^void createarray(long long int arr[], int n){$/;"	f
 data	1.1.3/SeqList.h	/^	datatype data[MAX];	\/* 存放顺序表元素的数组 *\/$/;"	m	struct:__anon3
 data	1.1.4/LinkList.h	/^	datatype data;			\/* 数据域 *\/$/;"	m	struct:Node
@@ -81,6 +89,7 @@ datatype	1.1.3/SeqList.h	/^} datatype;$/;"	t	typeref:struct:__anon2
 datatype	1.1.4/LinkList.h	/^} datatype;$/;"	t	typeref:struct:__anon4
 exp1	2.2/11121281_2_2.c	/^double exp1(double x){$/;"	f
 exp2	2.2/11121281_2_2.c	/^double exp2(double x){$/;"	f
+factorial	2.12/11121281_2_12.c	/^unsigned long long int factorial(unsigned long long int n){$/;"	f
 factorial	2.2/11121281_2_2.c	/^double factorial(unsigned long long int n){$/;"	f
 fgetline	1.1.3/SeqList.c	/^char *fgetline(FILE *fp, char *str, int n, char delim)$/;"	f
 fgetline	1.1.4/LinkList.c	/^char *fgetline(FILE *fp, char *str, int n, char delim)$/;"	f
@@ -97,7 +106,9 @@ height	1.1.4/LinkList.h	/^	double height;			\/* 身高 *\/$/;"	m	struct:__anon4
 id	1.1.3/SeqList.h	/^	int id;			\/* 学号 *\/$/;"	m	struct:__anon2
 id	1.1.4/LinkList.h	/^	int id;					\/* 学号 *\/$/;"	m	struct:__anon4
 isSaddlePoint	2.10/11121281_2_10.c	/^int isSaddlePoint(int arr[][MAXLEN], int ii, int jj, int n){$/;"	f
+issxh	2.13/11121281_2_13.c	/^int issxh(int n){$/;"	f
 join	1.1.6/11121281_06.c	/^void join(student *head){$/;"	f
+judge	2.15/11121281_2_15.c	/^char *judge(unsigned int n){$/;"	f
 last	1.1.3/SeqList.h	/^	int last;			\/* 表示data中实际存放元素个数 *\/$/;"	m	struct:__anon3
 last	2.8/test.py	/^	last = this;$/;"	v
 last	2.8/test.py	/^last = -25$/;"	v
@@ -112,6 +123,11 @@ main	1.1.5/11121281_5.c	/^int main(void)$/;"	f
 main	1.1.6/11121281_06.c	/^int main(void)$/;"	f
 main	2.1/11121281_2_1.c	/^int main(void)$/;"	f
 main	2.10/11121281_2_10.c	/^int main(void)$/;"	f
+main	2.11/11121281_2_11.c	/^int main(void)$/;"	f
+main	2.12/11121281_2_12.c	/^int main(void)$/;"	f
+main	2.13/11121281_2_13.c	/^int main(void)$/;"	f
+main	2.14/11121281_2_14.c	/^int main(void)$/;"	f
+main	2.15/11121281_2_15.c	/^int main(void)$/;"	f
 main	2.2/11121281_2_2.c	/^int main(void)$/;"	f
 main	2.3/11121281_2_3.c	/^int main(void)$/;"	f
 main	2.4/11121281_2_4.c	/^int main(void)$/;"	f
@@ -131,6 +147,7 @@ node	2.5/11121281_2_5.c	/^typedef struct node{$/;"	s	file:
 node	2.5/11121281_2_5.c	/^}node;$/;"	t	typeref:struct:node	file:
 order	1.1.6/11121281_06.c	/^	int order;$/;"	m	struct:student	file:
 palindrome	2.4/11121281_2_4.c	/^char *palindrome(char *str){$/;"	f
+printarr	2.11/11121281_2_11.c	/^void printarr(int arr[][MAXLEN], int n){$/;"	f
 readarr	2.10/11121281_2_10.c	/^int readarr(int arr[][MAXLEN], FILE *fp){$/;"	f
 score	1.1.5/linklist.h	/^	int stnum, score;$/;"	m	struct:student
 sex	1.1.3/SeqList.h	/^	int sex;$/;"	m	struct:__anon2
