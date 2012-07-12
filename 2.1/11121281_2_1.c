@@ -35,5 +35,6 @@ int main(void)
 		printf("GCD(%d,%d) = %d\n", a, b, gcd);
 		printf("LCM(%d,%d) = %d\n", a, b, getLCM(a, b, gcd));
 	}
+	fclose(fp);
 	return 0;
 }

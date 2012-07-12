@@ -49,6 +49,7 @@ int main(void)
 		sort(arr, n);
 		show(arr, n);
 	}
+	fclose(fp);
 	return 0;
 }
 

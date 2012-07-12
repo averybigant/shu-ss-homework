@@ -45,5 +45,6 @@ int main(void)
 		if(haveSaddlePoint(arr, n))printf("YES\n");
 		else printf("NO\n");
 	}
+	fclose(fp);
 	return 0;
 }

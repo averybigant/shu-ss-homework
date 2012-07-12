@@ -26,6 +26,7 @@ int main(void)
 		fscanf(fp, "%lf\n", &lambda);
 		printf("Case %u: %g, %d\n", i++, lambda, LogisticT(lambda));
 	}
+	fclose(fp);
 	return 0;
 }
 

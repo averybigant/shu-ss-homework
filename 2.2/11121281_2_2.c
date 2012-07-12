@@ -42,6 +42,7 @@ int main(void)
 		printf("e1(%.3lf) = %.5lf\n", x, exp1(x) + 0.000005);
 		printf("e2(%.3lf) = %.5lf\n\n", x, exp2(x) + 0.000005);
 	}
+	fclose(fp);
 	return 0;
 }
 

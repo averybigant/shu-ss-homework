@@ -21,6 +21,7 @@ GetAverage	1.1.1/11121281_01.c	/^double GetAverage(int *a, int n){$/;"	f
 GetData	1.1.1/11121281_01.c	/^void GetData(int *a, int n){$/;"	f
 GetIndex1	1.1.1/11121281_01.c	/^int GetIndex1(int *a, int n, double x){$/;"	f
 GetIndex2	1.1.1/11121281_01.c	/^int GetIndex2(int *a, int n, double x){$/;"	f
+HFSQRT3	2.19/11121281_2_19.c	5;"	d	file:
 Init	1.1.6/11121281_06.c	/^void Init(student *head){$/;"	f
 Init	2.5/11121281_2_5.c	/^void Init(node *head){$/;"	f
 InitList	1.1.3/SeqList.c	/^void InitList(SeqList *lp)$/;"	f
@@ -58,6 +59,7 @@ PrintList	1.1.3/SeqList.c	/^void PrintList(SeqList *lp)$/;"	f
 Reverse	1.1.3/SeqList.c	/^void Reverse(SeqList *lp){$/;"	f
 Reverse	1.1.4/LinkList.c	/^void Reverse(struct Node *head)$/;"	f
 SCALE	2.17/11121281_2_17.c	4;"	d	file:
+SCALE	2.19/11121281_2_19.c	4;"	d	file:
 SCALE	2.2/11121281_2_2.c	3;"	d	file:
 SEQLIST_H	1.1.3/SeqList.h	3;"	d
 STUDENTS	1.1.2/11121281_02.c	/^}STUDENTS;$/;"	t	typeref:struct:__anon1	file:
@@ -79,6 +81,7 @@ addnode	1.1.5/linklist.c	/^void addnode(Node *head){$/;"	f
 addnode	1.1.6/11121281_06.c	/^void addnode(student *head, int n){$/;"	f
 calcstr	2.14/11121281_2_14.c	/^void calcstr(char *str){$/;"	f
 calctriangles	2.12/11121281_2_12.c	/^unsigned long long int calctriangles(unsigned long long int points){$/;"	f
+checkans	2.19/11121281_2_19.c	/^unsigned int checkans(double _Complex z){$/;"	f
 code	1.1.6/11121281_06.c	/^	int code;$/;"	m	struct:student	file:
 count	2.5/11121281_2_5.c	/^int count(node *head){$/;"	f
 countbigger	1.1.5/linklist.c	/^int countbigger(Node *head, int score){$/;"	f
@@ -110,15 +113,12 @@ height	1.1.3/SeqList.h	/^	double height;	\/* 身高 *\/$/;"	m	struct:__anon2
 height	1.1.4/LinkList.h	/^	double height;			\/* 身高 *\/$/;"	m	struct:__anon4
 id	1.1.3/SeqList.h	/^	int id;			\/* 学号 *\/$/;"	m	struct:__anon2
 id	1.1.4/LinkList.h	/^	int id;					\/* 学号 *\/$/;"	m	struct:__anon4
+interation	2.19/11121281_2_19.c	/^double _Complex interation(double _Complex z){$/;"	f
 isSaddlePoint	2.10/11121281_2_10.c	/^int isSaddlePoint(int arr[][MAXLEN], int ii, int jj, int n){$/;"	f
 issxh	2.13/11121281_2_13.c	/^int issxh(int n){$/;"	f
 join	1.1.6/11121281_06.c	/^void join(student *head){$/;"	f
 judge	2.15/11121281_2_15.c	/^char *judge(unsigned int n){$/;"	f
 last	1.1.3/SeqList.h	/^	int last;			\/* 表示data中实际存放元素个数 *\/$/;"	m	struct:__anon3
-last	2.8/test.py	/^	last = this;$/;"	v
-last	2.8/test.py	/^last = -25$/;"	v
-lastlast	2.8/test.py	/^	lastlast = last;$/;"	v
-lastlast	2.8/test.py	/^lastlast = 25$/;"	v
 main	1.1.1/11121281_01.c	/^int main(void)$/;"	f
 main	1.1.2/11121281_02.c	/^int main(void)$/;"	f
 main	1.1.2/generate_records.py	/^def main():$/;"	f
@@ -136,7 +136,9 @@ main	2.15/11121281_2_15.c	/^int main(void)$/;"	f
 main	2.16/11121281_2_6.c	/^int main(void)$/;"	f
 main	2.17/11121281_2_17.c	/^int main(void)$/;"	f
 main	2.18/11121281_2_18.c	/^int main(void)$/;"	f
+main	2.19/11121281_2_19.c	/^int main(void)$/;"	f
 main	2.2/11121281_2_2.c	/^int main(void)$/;"	f
+main	2.20/11121281_2_20.c	/^int main(void)$/;"	f
 main	2.3/11121281_2_3.c	/^int main(void)$/;"	f
 main	2.4/11121281_2_4.c	/^int main(void)$/;"	f
 main	2.5/11121281_2_5.c	/^int main(void)$/;"	f
@@ -144,6 +146,7 @@ main	2.6/11121281_2_6.c	/^int main(void)$/;"	f
 main	2.7/11121281_2_7.c	/^int main(void)$/;"	f
 main	2.8/11121281_2_8.c	/^int main(void)$/;"	f
 main	2.9/11121281_2_9.c	/^int main(void)$/;"	f
+main	checkfclose.py	/^def main():$/;"	f
 mul	2.16/11121281_2_6.c	/^double mul(double a, double b){$/;"	f
 name	1.1.3/SeqList.h	/^	char name[9];	\/* 姓名 *\/$/;"	m	struct:__anon2
 name	1.1.4/LinkList.h	/^	char name[9];			\/* 姓名 *\/$/;"	m	struct:__anon4
@@ -179,5 +182,4 @@ student	1.1.6/11121281_06.c	/^typedef struct student{$/;"	s	file:
 student	1.1.6/11121281_06.c	/^}student;$/;"	t	typeref:struct:student	file:
 sub	2.16/11121281_2_6.c	/^double sub(double a, double b){$/;"	f
 swap	2.7/11121281_2_7.c	/^void swap(char **s1, char **s2){$/;"	f
-this	2.8/test.py	/^	this = ((last*4627 + lastlast*3581)\/100)%100 - 50$/;"	v
 times	2.18/11121281_2_18.c	/^int times(int num){$/;"	f

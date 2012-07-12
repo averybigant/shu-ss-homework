@@ -19,5 +19,6 @@ int main(void)
 		fscanf(fp, "%d\n", &n);
 		printf("%s\n", judge(n));
 	}
+	fclose(fp);
 	return 0;
 }

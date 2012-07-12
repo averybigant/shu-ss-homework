@@ -30,5 +30,6 @@ int main(void)
 		printf("%s", str1);
 		printf("%s", str2);
 	}
+	fclose(fp);
 	return 0;
 }

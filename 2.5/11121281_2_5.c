@@ -86,5 +86,6 @@ int main(void)
 		Init(&list);
 	}
 	freelist(&list);
+	fclose(fp);
 	return 0;
 }
